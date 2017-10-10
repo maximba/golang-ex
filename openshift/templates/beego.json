@@ -9,6 +9,11 @@
       "iconClass": "icon-golang"
     }
   },
+  "strategy": {
+    "customStrategy": {
+        "exposeDockerSocket":"true"
+    }
+  },  
   "labels": {
     "template": "beego-example"
   },
@@ -78,10 +83,7 @@
           "contextDir": "${CONTEXT_DIR}"
         },
         "strategy": {
-          "type": "Docker",
-          "customStrategy": {
-            "exposeDockerSocket":"true"
-          }
+          "type": "Docker"
         },
         "output": {
           "to": {
